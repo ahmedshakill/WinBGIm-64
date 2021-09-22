@@ -14,8 +14,8 @@
 #include <stdio.h>              // Provides sprintf
 #include <iostream>             // This is for debug only
 #include <vector>               // MGM: Added for BGI__WindowTable
-#include "winbgim.h"             // External API routines
-#include "winbgitypes.h"        // Internal structures and routines
+#include "../include/bgi/winbgim.h"             // External API routines
+#include "../include/bgi/winbgitypes.h"        // Internal structures and routines
 
 // The window message-handling function (in WindowThread.cpp)
 LRESULT CALLBACK WndProc( HWND, UINT, WPARAM, LPARAM );

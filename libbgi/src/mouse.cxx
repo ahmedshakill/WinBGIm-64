@@ -12,8 +12,8 @@
 
 #include <windows.h>        // Provides Win32 API
 #include <windowsx.h>       // Provides GDI helper macros
-#include "winbgim.h"         // API routines
-#include "winbgitypes.h"    // Internal structure data
+#include "../include/bgi/winbgim.h"         // API routines
+#include "../include/bgi/winbgitypes.h"    // Internal structure data
 
 /*****************************************************************************
 *

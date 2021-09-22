@@ -11,8 +11,8 @@
 
 #include <windows.h>            // Provides the Win32 API
 #include <windowsx.h>           // Provides message cracker macros (p. 96)
-#include "winbgim.h"             // External API routines
-#include "winbgitypes.h"        // Internal structures and routines
+#include "../include/bgi/winbgim.h"             // External API routines
+#include "../include/bgi/winbgitypes.h"        // Internal structures and routines
 #include <vector>               // Used in BGI__WindowTable
 #include <queue>                // Provides queue<POINTS>
 

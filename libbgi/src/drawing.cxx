@@ -22,9 +22,9 @@
 #include <ocidl.h>          // IPicture
 #include <olectl.h>         // Support for iPicture
 #include <string.h>         // Provides strlen
-#include "winbgim.h"         // API routines
-#include "winbgitypes.h"    // Internal structure data
-#include "dibapi.h"         // DIB functions from Microsoft
+#include "../include/bgi/winbgim.h"         // API routines
+#include "../include/bgi/winbgitypes.h"    // Internal structure data
+#include "../include/bgi/dibapi.h"         // DIB functions from Microsoft
 #include <iostream>
 
 #ifndef M_PI

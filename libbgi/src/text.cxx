@@ -16,8 +16,8 @@
 #include <iostream>
 #include <sstream>          // Provides ostringstream
 #include <string>           // Provides string
-#include "winbgim.h"         // API routines
-#include "winbgitypes.h"    // Internal structure data
+#include "../include/bgi/winbgim.h"         // API routines
+#include "../include/bgi/winbgitypes.h"    // Internal structure data
 
 
 /*****************************************************************************

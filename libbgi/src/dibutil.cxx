@@ -29,8 +29,8 @@
 
 #include <windows.h>
 #include <assert.h>
-#include "dibapi.h"
-#include "dibutil.h"
+#include "../include/bgi/dibapi.h"
+#include "../include/bgi/dibutil.h"
 #include <stdio.h>
 
 

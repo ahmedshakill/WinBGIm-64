@@ -22,9 +22,9 @@
 #include <io.h>
 #include <direct.h>
 #include <stdlib.h>
-#include "dibutil.h"
-#include "dibapi.h"
-#include "winbgitypes.h" // Provides showerrorbox prototype
+#include "../include/bgi/dibutil.h"
+#include "../include/bgi/dibapi.h"
+#include "../include/bgi/winbgitypes.h" // Provides showerrorbox prototype
 
 
 // Dib Header Marker - used in writing DIBs to files

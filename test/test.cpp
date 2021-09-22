@@ -3,7 +3,7 @@
 int main() {
     int gd = DETECT, gm;
     initgraph(&gd,&gm,(char*)"");
-    outtext("Hello WinBGIm");
+    outtext("Hello bgi");
     circle(320,240,200);
     getch();
     closegraph();
