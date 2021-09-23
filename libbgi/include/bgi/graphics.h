@@ -78,39 +78,39 @@
 // The standard Borland 16 colors
 #define MAXCOLORS       15
 enum colors { BLACK, BLUE, GREEN, CYAN, RED, MAGENTA, BROWN, LIGHTGRAY, DARKGRAY,
-              LIGHTBLUE, LIGHTGREEN, LIGHTCYAN, LIGHTRED, LIGHTMAGENTA, YELLOW, WHITE };
+    LIGHTBLUE, LIGHTGREEN, LIGHTCYAN, LIGHTRED, LIGHTMAGENTA, YELLOW, WHITE };
 
 // The standard line styles
 enum line_styles { SOLID_LINE, DOTTED_LINE, CENTER_LINE, DASHED_LINE, USERBIT_LINE };
 
 // The standard fill styles
 enum fill_styles { EMPTY_FILL, SOLID_FILL, LINE_FILL, LTSLASH_FILL, SLASH_FILL,
-                   BKSLASH_FILL, LTBKSLASH_FILL, HATCH_FILL, XHATCH_FILL, INTERLEAVE_FILL,
-                   WIDE_DOT_FILL, CLOSE_DOT_FILL, USER_FILL };
+    BKSLASH_FILL, LTBKSLASH_FILL, HATCH_FILL, XHATCH_FILL, INTERLEAVE_FILL,
+    WIDE_DOT_FILL, CLOSE_DOT_FILL, USER_FILL };
 
 // The various graphics drivers
 enum graphics_drivers { DETECT, CGA, MCGA, EGA, EGA64, EGAMONO, IBM8514, HERCMONO,
-                        ATT400, VGA, PC3270 };
+    ATT400, VGA, PC3270 };
 
 // Various modes for each graphics driver
-enum graphics_modes { CGAC0, CGAC1, CGAC2, CGAC3, CGAHI, 
-                      MCGAC0 = 0, MCGAC1, MCGAC2, MCGAC3, MCGAMED, MCGAHI,
-                      EGALO = 0, EGAHI,
-                      EGA64LO = 0, EGA64HI,
-                      EGAMONOHI = 3,
-                      HERCMONOHI = 0,
-                      ATT400C0 = 0, ATT400C1, ATT400C2, ATT400C3, ATT400MED, ATT400HI,
-                      VGALO = 0, VGAMED, VGAHI,
-                      PC3270HI = 0,
-                      IBM8514LO = 0, IBM8514HI };
+enum graphics_modes { CGAC0, CGAC1, CGAC2, CGAC3, CGAHI,
+    MCGAC0 = 0, MCGAC1, MCGAC2, MCGAC3, MCGAMED, MCGAHI,
+    EGALO = 0, EGAHI,
+    EGA64LO = 0, EGA64HI,
+    EGAMONOHI = 3,
+    HERCMONOHI = 0,
+    ATT400C0 = 0, ATT400C1, ATT400C2, ATT400C3, ATT400MED, ATT400HI,
+    VGALO = 0, VGAMED, VGAHI,
+    PC3270HI = 0,
+    IBM8514LO = 0, IBM8514HI };
 
 // Borland error messages for the graphics window.
 #define NO_CLICK        -1      // No mouse event of the current type in getmouseclick
 enum graph_errors { grInvalidVersion = -18, grInvalidDeviceNum = -15, grInvalidFontNum,
-                    grInvalidFont, grIOerror, grError, grInvalidMode, grNoFontMem,
-                    grFontNotFound, grNoFloodMem, grNoScanMem, grNoLoadMem,
-                    grInvalidDriver, grFileNotFound, grNotDetected, grNoInitGraph,
-                    grOk };
+    grInvalidFont, grIOerror, grError, grInvalidMode, grNoFontMem,
+    grFontNotFound, grNoFloodMem, grNoScanMem, grNoLoadMem,
+    grInvalidDriver, grFileNotFound, grNotDetected, grNoInitGraph,
+    grOk };
 
 // Write modes
 enum putimage_ops{ COPY_PUT, XOR_PUT, OR_PUT, AND_PUT, NOT_PUT };
@@ -119,8 +119,8 @@ enum putimage_ops{ COPY_PUT, XOR_PUT, OR_PUT, AND_PUT, NOT_PUT };
 enum horiz { LEFT_TEXT, CENTER_TEXT, RIGHT_TEXT };
 enum vertical { BOTTOM_TEXT, VCENTER_TEXT, TOP_TEXT }; // middle not needed other than as seperator
 enum font_names { DEFAULT_FONT, TRIPLEX_FONT, SMALL_FONT, SANS_SERIF_FONT,
-             GOTHIC_FONT, SCRIPT_FONT, SIMPLEX_FONT, TRIPLEX_SCR_FONT,
-			 COMPLEX_FONT, EUROPEAN_FONT, BOLD_FONT };
+    GOTHIC_FONT, SCRIPT_FONT, SIMPLEX_FONT, TRIPLEX_SCR_FONT,
+    COMPLEX_FONT, EUROPEAN_FONT, BOLD_FONT };
 // ---------------------------------------------------------------------------
 
 
@@ -175,7 +175,7 @@ struct textsettingstype
 struct viewporttype
 {
     int left, top,              // Viewport bounding box
-        right, bottom;
+    right, bottom;
     int clip;                   // Whether to clip image to viewport
 };
 
@@ -242,7 +242,7 @@ int gety( );
 void moverel( int dx, int dy );
 void moveto( int x, int y );
 void refreshbgi(int left, int top, int right, int bottom);
-void refreshallbgi( );    
+void refreshallbgi( );
 void setbkcolor( int color );
 void setcolor( int color );
 void setfillpattern( char *upattern, int color );
@@ -256,17 +256,17 @@ void setwritemode( int mode );
 void closegraph( int wid=ALL_WINDOWS );
 void detectgraph( int *graphdriver, int *graphmode );
 void getaspectratio( int *xasp, int *yasp );
-char *getdrivername( );
+const char *getdrivername( );                   //changed return type to const char*
 int getgraphmode( );
 int getmaxmode( );
 char *getmodename( int mode_number );
 void getmoderange( int graphdriver, int *lomode, int *himode );
 void graphdefaults( );
-char *grapherrormsg( int errorcode );
+const char *grapherrormsg( int errorcode );    //changed return type to const char*
 int graphresult( );
 void initgraph( int *graphdriver, int *graphmode, char *pathtodriver );
 int initwindow
-    ( int width, int height, const char* title="Windows BGI", int left=0, int top=0, bool dbflag=false, bool closeflag=true );
+        ( int width, int height, const char* title="Windows BGI", int left=0, int top=0, bool dbflag=false, bool closeflag=true );
 int installuserdriver( char *name, int *fp );    // Not available in WinBGI
 int installuserfont( char *name );               // Not available in WinBGI
 int registerbgidriver( void *driver );           // Not available in WinBGI
@@ -284,7 +284,7 @@ int kbhit( );
 // User-Controlled Window Functions (winbgi.cpp)
 int getcurrentwindow( );
 void setcurrentwindow( int window );
-    
+
 // Double buffering support (winbgi.cpp)
 int getactivepage( );
 int getvisualpage( );
@@ -297,20 +297,20 @@ unsigned imagesize( int left, int top, int right, int bottom );
 void getimage( int left, int top, int right, int bottom, void *bitmap );
 void putimage( int left, int top, void *bitmap, int op );
 void printimage(
-    const char* title=NULL,	
-    double width_inches=7, double border_left_inches=0.75, double border_top_inches=0.75,
-    int left=0, int right=0, int top=INT_MAX, int bottom=INT_MAX,
-    bool active=true, HWND hwnd=NULL
-    );
+        const char* title=NULL,
+        double width_inches=7, double border_left_inches=0.75, double border_top_inches=0.75,
+        int left=0, int right=0, int top=INT_MAX, int bottom=INT_MAX,
+        bool active=true, HWND hwnd=NULL
+);
 void readimagefile(
-    const char* filename=NULL,
-    int left=0, int top=0, int right=INT_MAX, int bottom=INT_MAX
-    );
+        const char* filename=NULL,
+        int left=0, int top=0, int right=INT_MAX, int bottom=INT_MAX
+);
 void writeimagefile(
-    const char* filename=NULL,
-    int left=0, int top=0, int right=INT_MAX, int bottom=INT_MAX,
-    bool active=true, HWND hwnd=NULL
-    );
+        const char* filename=NULL,
+        int left=0, int top=0, int right=INT_MAX, int bottom=INT_MAX,
+        bool active=true, HWND hwnd=NULL
+);
 
 // Text Functions (text.cpp)
 void gettextsettings(struct textsettingstype *texttypeinfo);
@@ -321,10 +321,10 @@ void settextstyle(int font, int direction, int charsize);
 void setusercharsize(int multx, int divx, int multy, int divy);
 int textheight(char *textstring);
 int textwidth(char *textstring);
-extern std::ostringstream bgiout;    
+extern std::ostringstream bgiout;
 void outstream(std::ostringstream& out=bgiout);
-void outstreamxy(int x, int y, std::ostringstream& out=bgiout);    
-    
+void outstreamxy(int x, int y, std::ostringstream& out=bgiout);
+
 // Mouse Functions (mouse.cpp)
 void clearmouseclick( int kind );
 void clearresizeevent( );
