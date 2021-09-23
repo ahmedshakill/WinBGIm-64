@@ -256,13 +256,13 @@ void setwritemode( int mode );
 void closegraph( int wid=ALL_WINDOWS );
 void detectgraph( int *graphdriver, int *graphmode );
 void getaspectratio( int *xasp, int *yasp );
-char *getdrivername( );
+const char *getdrivername( );                   //changed return type to const char*
 int getgraphmode( );
 int getmaxmode( );
 char *getmodename( int mode_number );
 void getmoderange( int graphdriver, int *lomode, int *himode );
 void graphdefaults( );
-char *grapherrormsg( int errorcode );
+const char *grapherrormsg( int errorcode );    //changed return type to const char*
 int graphresult( );
 void initgraph( int *graphdriver, int *graphmode, char *pathtodriver );
 int initwindow

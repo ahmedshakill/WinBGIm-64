@@ -55,7 +55,7 @@ static int font_family[] =
     VARIABLE_PITCH|FF_DONTCARE,  // EuropeanFont
     VARIABLE_PITCH|FF_DONTCARE   // BoldFont
 };
-static char* font_name[] =
+static const char* font_name[] =                                // changed array type to const char*
 {
     "Console",          // DefaultFont
     "Times New Roman",  // TriplexFont
@@ -309,7 +309,7 @@ void setusercharsize(int multx, int divx, int multy, int divy)
 // text output settings.
 // POSTCONDITION: the height of the string in pixels has been returned.
 //
-int textheight(char *textstring)
+int textheight(const char *textstring) //changed argument type to const char*
 {
     HDC hDC = BGI__GetWinbgiDC( );
     SIZE tb;

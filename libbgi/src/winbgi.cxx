@@ -459,7 +459,7 @@ int getch( )
 // This function returns the name of the current driver in use.  For WinBGI,
 // this is always "EGAVGA"
 //
-char *getdrivername( )
+const char *getdrivername( )
 {
     return "EGAVGA";
 }
@@ -558,9 +558,9 @@ void getmoderange( int graphdriver, int *lomode, int *himode )
 // This function returns an error string corresponding to the given error code.
 // This code is returned by graphresult()
 //
-char *grapherrormsg( int errorcode )
+const char *grapherrormsg( int errorcode )
 {
-    static char *msg[16] = { "No error", "Graphics not installed",
+    static const char *msg[16] = { "No error", "Graphics not installed",
         "Graphics hardware not detected", "Device driver not found",
         "Invalid device driver file", "Insufficient memory to load driver",
         "Out of memory in scan fill", "Out of memory in flood fill",
