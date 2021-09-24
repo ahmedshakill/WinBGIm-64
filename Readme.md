@@ -8,6 +8,6 @@ where linker says it can't find libbgi.a cause 64 bit compiler
 ignores 32 bit build of the library.
 
 
-
+Win32 system calls have been updated to reflect the changes in win32 api for 64 bit compatibility.
 
 Link to original source http://winbgim.codecutter.org/
