@@ -16,18 +16,18 @@ Link to original source http://winbgim.codecutter.org/
 
 ### To Build and Run
 ####  You can build and run this project directly and write your graphics program on top of it. 
-#####       * For that clone the repo using 
+#####       a. For that clone the repo using 
       
       git clone https://github.com/ki9gpin/WinBGIm-64
 
-#####       * If You are usin VS Code then open the WinBGIm-64 folder there. 
+#####       b. If You are usin VS Code then open the WinBGIm-64 folder there. 
 
-#####       * VS code will suggest necessary extensions install them.  Or manually search for cmake in extensions and install the ones from microsoft. 
+#####       c. VS code will suggest necessary extensions install them.  Or manually search for cmake in extensions and install the ones from microsoft. 
 
-#####       * You will see a bar with cmake functionality down in the VS Code window or just close and reopen the folder and you will see the expected bar.
+#####       d. You will see a bar with cmake functionality down in the VS Code window or just close and reopen the folder and you will see the expected bar.
 
-#####       * If you see the bar click on build and if you can't see the bar then build manually by  pressing CTRL+SHIFT+P to get command pallete and selecting CMake Build.  
+#####       e. If you see the bar click on build and if you can't see the bar then build manually by  pressing CTRL+SHIFT+P to get command pallete and selecting CMake Build.  
 
-#####       * May be watching a video tutorial will help you if you are confused .It's easier than you think.
+#####       f. May be watching a video tutorial will help you if you are confused .It's easier than you think.
  
-#####       * You can then go to *test* folder and modify *test.cpp* or write you own graphics code in the file.
+#####       g. You can then go to *test* folder and modify *test.cpp* or write you own graphics code in the file.
