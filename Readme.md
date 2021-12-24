@@ -26,3 +26,5 @@ install the one from microsoft. You will see a bar with cmake functionality down
 close and reopen the folder and you will see the expected bar.
 Then press CTRL+SHIFT+P to get command pallete and select CMake Build.  
 May be watching a video tutorial will help you if you are confused .It's easier than you think.
+
+You can then go to *test* folder and modify *test.cpp* or write you own graphics code in the file.
