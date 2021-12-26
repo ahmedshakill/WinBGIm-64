@@ -12,7 +12,7 @@ Win32 system calls have been updated to reflect the changes in win32 api for 64 
 
 Link to original source http://winbgim.codecutter.org/
 
-
+![example branch main](https://github.com/ki9gpin/WinBGIm-64/actions/workflows/cmake.yml/badge.svg)
 
 ### To Build and Run
 ####  You can build and run this project directly and write your graphics program on top of it. 
