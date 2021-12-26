@@ -1,4 +1,4 @@
-#include <graphics.h>
+#include "graphics.h"
 int main() {
     int i, j = 0, gd = DETECT, gm;
 
