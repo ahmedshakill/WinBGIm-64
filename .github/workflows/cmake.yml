@@ -19,6 +19,19 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
+    - name: Cache Chocolatey Dependencies
+      uses: actions/cache@v1
+      with:
+        path: C:\ProgramData\chocolatey\lib\mingw\tools\install
+        key: choco-cache-${{ hashFiles('**/dependencies.config') }}
+        restore-keys: |
+          choco-cache-
+    - name: Install Dependencies
+      uses: crazy-max/ghaction-chocolatey@v1
+      with:
+        args: install dependencies.config -y
+        
     - name: choco_install
       run: choco install mingw --version=11.2.0
     - name: Configure CMake
