@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.11)
-#project(WinBGIm)
+project(WinBGIm)
 
 set(CMAKE_CXX_STANDARD 11)
 
-#SET(GCC_COVERAGE_COMPILE_FLAGS "-m64 -fno-rtti -fno-exceptions -Wno-narrowing -fpermissive")
-#SET(GCC_COVERAGE_COMPILE_FLAGS "-m64 -Wno-narrowing ")
-#SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")
+SET(GCC_COVERAGE_COMPILE_FLAGS "-m64 -fno-rtti -fno-exceptions -Wno-error  -Wwrite-strings -Wno-narrowing -fpermissive")
+# SET(GCC_COVERAGE_COMPILE_FLAGS "-m64 -Wno-narrowing ")
+SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")
 
 add_subdirectory(libbgi)
 add_subdirectory(test)

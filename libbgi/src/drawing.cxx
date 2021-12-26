@@ -62,8 +62,8 @@ WindowData* BGI__GetWindowDataPtr( HWND hWnd )
     // TODOMGM: Change this function to GetWindowLongPtr and change the set function
     // elsewhere to SetWindowLongPtr.  We are using the short version now because
     // g++ does not support the long version.
-    //return (WindowData*)GetWindowLong( hWnd, GWLP_USERDATA );
-     return (WindowData*)GetWindowLongPtr( hWnd, GWLP_USERDATA );
+    // return (WindowData*)GetWindowLong( hWnd, GWLP_USERDATA );
+     return  (WindowData*)GetWindowLongPtr( hWnd, GWLP_USERDATA );
 
 }
 

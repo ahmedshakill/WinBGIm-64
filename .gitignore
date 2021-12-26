@@ -1,2 +1,7 @@
 /cmake-build-debug/
+/build/
 .idea
+.gitignore
+.vscode
+test.exe
+libbgi/src/text.o
