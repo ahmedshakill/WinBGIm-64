@@ -26,13 +26,13 @@ jobs:
       uses: actions/cache@v1
       id: cache-gcc
       with:
-        path: C:\ProgramData\chocolatey\lib\mingw\tools\install
-        key: choco-cache-
+        path: C:\ProgramData\chocolatey\lib
+        key: choco-cache-mingw
         restore-keys: |
-          choco-cache-
+          choco-cache-mingw
           
-    - run: choco install mingw --version=11.2.0 -y
-      if: steps.cache-gcc.outputs.cache-hit != 'true'
+#     - run: choco install mingw --version=11.2.0 -y
+#       if: steps.cache-gcc.outputs.cache-hit != 'true'
       
     - name: Install gcc
       if: steps.cache-gcc.outputs.cache-hit != 'true'
