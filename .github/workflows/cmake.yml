@@ -25,7 +25,7 @@ jobs:
     - name: Cache Chocolatey Dependencies
       uses: actions/cache@v1
       with:
-        path: C:\ProgramData\chocolatey\lib
+        path: C:\ProgramData\chocolatey\lib\mingw\tools\install
         key: choco-cache-${{ hashFiles('**/dependencies.config') }}
         restore-keys: |
           choco-cache-
