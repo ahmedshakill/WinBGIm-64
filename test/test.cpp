@@ -1,6 +1,6 @@
-#include<graphics.h>
-#include<iostream>
-#include<cmath>
+#include "graphics.h"
+int main() {
+    int i, j = 0, gd = DETECT, gm;
 
 const int  Width=800;
 const int Height=600;
