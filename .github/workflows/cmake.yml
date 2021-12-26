@@ -34,10 +34,11 @@ jobs:
     - run: choco install mingw --version=11.2.0 -y
       if: steps.cache-gcc.outputs.cache-hit != 'true'
       
-#     - name: Install Dependencies
-#       uses: crazy-max/ghaction-chocolatey@v1
-#       with:
-#         args: install mingw --version=11.2.0 -y
+    - name: Install gcc
+      if: steps.cache-gcc.outputs.cache-hit != 'true'
+      uses: crazy-max/ghaction-chocolatey@v1
+      with:
+        args: install mingw --version=11.2.0 -y
         
     
     - name: Configure CMake
