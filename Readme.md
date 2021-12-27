@@ -18,7 +18,8 @@ Link to original source http://winbgim.codecutter.org/
 
 ### To Build and Run
 ####  You can build and run this project directly and write your graphics program on top of it. 
-* #####       For that clone the repo using 
+###### For that
+* #####        Clone the repo using 
       
       git clone https://github.com/ki9gpin/WinBGIm-64
 
