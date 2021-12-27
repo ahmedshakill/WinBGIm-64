@@ -28,9 +28,7 @@ Link to original source http://winbgim.codecutter.org/
 
 * #####       You will see a bar with cmake functionality down in the VS Code window or just close and reopen the folder and you will see the expected bar.
 
-* #####         If you see the bar click on build and if you can't see the bar then build manually by  pressing CTRL+SHIFT+P to get command pallete 
-
-  #####                         and selecting CMake Build.  
+* #####         If you see the bar click on build and if you can't see the bar then build manually by  pressing CTRL+SHIFT+P to get command pallete and selecting CMake Build.  
 
 * #####       May be watching a video tutorial will help you if you are confused .It's easier than you think.
  
