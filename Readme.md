@@ -27,10 +27,10 @@ Link to original source http://winbgim.codecutter.org/
 
 * #####       VS code will suggest necessary extensions install them.  Or manually search for cmake in extensions and install the ones from microsoft. 
 
-* #####       You will see a bar with cmake functionality down in the VS Code window or just close and reopen the folder and you will see the expected bar.
+* #####       You will see a bar with cmake functionality down in the VS Code window or just close VS Code and reopen the folder and you will see the expected bar.
 
-* #####         If you see the bar click on build and if you can't see the bar then build manually by  pressing CTRL+SHIFT+P to get command pallete and selecting CMake Build.  
+* #####         If you see the bar then to build the project click on build and if you can't see the bar then you can build manually by  pressing CTRL+SHIFT+P to get command pallete and selecting CMake Build.  
 
 * #####       May be watching a video tutorial will help you if you are confused .It's easier than you think.
  
-* #####       You can then go to *test* folder and modify *test.cpp* or write you own graphics code in the file.
+* #####       You can then go to *test* folder and modify *test.cpp* or write your own graphics code in the file.
