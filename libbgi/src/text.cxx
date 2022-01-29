@@ -173,7 +173,7 @@ static void set_font(WindowData* pWndData)
 
     // assign the fonts to each of the hdcs
     for ( int i = 0; i < MAX_PAGES; i++ )
-	SelectObject( pWndData->hDC[i], hFont );
+	DeleteObject(SelectObject( pWndData->hDC[i], hFont ));
 }
 
 
