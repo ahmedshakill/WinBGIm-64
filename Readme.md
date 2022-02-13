@@ -23,9 +23,9 @@ Link to original source http://winbgim.codecutter.org/
       
       git clone https://github.com/ki9gpin/WinBGIm-64
 
-* #####       If You are usin VS Code then open the WinBGIm-64 folder there. 
+* #####       Make sure GCC and CMake are installed properly and accessible from command line. Otherwise  insatll GCC (TDM64 or Mingw64) . Install CMake .
 
-* #####      Insatll GCC (TDM64 or mingw64) . Install CMake .Make sure GCC and CMake are installed properly and accessible from command line.
+* #####       If You are using VS Code then open the WinBGIm-64 folder there. 
 
 * #####       VS code will suggest necessary extensions install them.  Or manually search for cmake in extensions and install the ones from microsoft. 
 
