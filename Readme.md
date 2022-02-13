@@ -25,6 +25,8 @@ Link to original source http://winbgim.codecutter.org/
 
 * #####       If You are usin VS Code then open the WinBGIm-64 folder there. 
 
+* #####      Insatll GCC (TDM64 or mingw64) . Install CMake .Make sure GCC and CMake are installed properly and accessible from command line.
+
 * #####       VS code will suggest necessary extensions install them.  Or manually search for cmake in extensions and install the ones from microsoft. 
 
 * #####       You will see a bar with cmake functionality down in the VS Code window or just close VS Code and reopen the folder and you will see the expected bar.
