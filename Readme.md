@@ -25,6 +25,8 @@ Link to original source http://winbgim.codecutter.org/
 
 * #####       Make sure GCC and CMake are installed properly and accessible from command line. Otherwise  insatll GCC (TDM64 or Mingw64) . Install CMake .
 
+#### VS Code
+
 * #####       If You are using VS Code then open the WinBGIm-64 folder there. 
 
 * #####       VS code will suggest necessary extensions install them.  Or manually search for cmake in extensions and install the ones from microsoft. 
@@ -34,5 +36,22 @@ Link to original source http://winbgim.codecutter.org/
 * #####         If you see the bar then to build the project click on build and if you can't see the bar then you can build manually by  pressing CTRL+SHIFT+P to get command pallete and selecting CMake Build.  
 
 * #####       May be watching a video tutorial will help you if you are confused .It's easier than you think.
+ 
+* #####       You can then go to *test* folder and modify *test.cpp* or write your own graphics code in the file.
+
+#### Code::Blocks
+
+* #####       Make sure CMake and MinGW are added to path
+
+      echo %PATH%
+
+If not, add them to path
+
+      set PATH=%PATH%;C:\Program Files\CMake\bin;C:/Program Files/CodeBlocks/MinGW/bin
+
+* #####       Build using cmake
+
+      cmake -G "MinGW Makefiles"
+      cmake --build .
  
 * #####       You can then go to *test* folder and modify *test.cpp* or write your own graphics code in the file.
